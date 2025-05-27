@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'Quantico';
+  src: url('/assets/fonts/Quantico/Quantico-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// @font-face {
+//   font-family: 'Quantico';
+//   src: url('/src/assets/fonts/Quantico/Quantico-Bold.ttf') format('truetype');
+//   font-weight: 700;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Quantico';
+//   src: url('/src/assets/fonts/Quantico/Quantico-Bold.ttf') format('truetype');
+//   font-weight: 400;
+//   font-style: italic;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Quantico';
+//   src: url('/src/assets/fonts/Quantico/Quantico-BoldItalic.ttf') format('truetype');
+//   font-weight: 700;
+//   font-style: italic;
+//   font-display: swap;
+// }
+
+// .quantico-regular {
+//   font-family: "Quantico", sans-serif;
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+// .quantico-bold {
+//   font-family: "Quantico", sans-serif;
+//   font-weight: 700;
+//   font-style: normal;
+// }
+
+// .quantico-regular-italic {
+//   font-family: "Quantico", sans-serif;
+//   font-weight: 400;
+//   font-style: italic;
+// }
+
+// .quantico-bold-italic {
+//   font-family: "Quantico", sans-serif;
+//   font-weight: 700;
+//   font-style: italic;
+// }
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    max-height: 100vh;
+    font-family:'Quantico', sans-serif;
+}
