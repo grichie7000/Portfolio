@@ -1,0 +1,21 @@
+@use 'variables' as *;
+
+.menu {
+  font-size: 36px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: $primary-color;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 2px 2px 40px black;
+  p{
+  transform: rotate(-90deg);
+  display: inline-block;
+  }
+}
