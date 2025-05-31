@@ -1,19 +1,12 @@
+@use "../styles/variables-and-mixins" as *;
 
-.landing-page{
-  position: absolute;
-  left: 180px;
-  top:0;
-  height: 100vh;
-  width: 500vw;
-  color: white;
-  display: flex;
-        background: linear-gradient(
-    to right,
-    #000000,
-    #2c2b2b,
-    #0b0a0a,
-    #323232,
-    #0b0a0a
-  );
+.landing-page {
+  background: linear-gradient(#0b042d, #1f0b80, #0b042f, #241085);
+  height: 200vh;
+}
 
+header {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
 }

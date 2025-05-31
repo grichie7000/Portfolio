@@ -1,0 +1,57 @@
+@use "../styles/variables-and-mixins" as *;
+
+.sticky-header {
+  font-size: 18px;
+  background: linear-gradient(#0b042d, #0b042d33);
+  height: 96px;
+  width: 100%;
+  @include paddingSide(240px);
+  @include flexbox($justify: space-between);
+
+  .menu {
+    @include flexbox($gap: 44px);
+  }
+
+  .logo {
+    transition: transform 0.3s;
+    img {
+      height: 82px;
+      width: 82px;
+    }
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+
+  .navbar {
+    ul {
+      list-style: none;
+      @include flexbox($direction: row, $gap: 20px);
+
+      li {
+        a {
+          text-decoration: none;
+          color: $primary-color;
+          transition: color 0.5s ease;
+
+          &:hover {
+            @include defaultHover();
+          }
+        }
+      }
+    }
+  }
+
+  .language-switch {
+    color: $primary-color;
+    @include flexbox($gap: 4px);
+    p {
+      text-decoration: none;
+
+      &:hover {
+        @include defaultHover();
+      }
+    }
+  }
+}

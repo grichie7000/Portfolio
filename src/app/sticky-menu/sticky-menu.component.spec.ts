@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MenuComponent } from './menu.component';
+import { StickyMenuComponent } from './sticky-menu.component';
 
-describe('MenuComponent', () => {
-  let component: MenuComponent;
-  let fixture: ComponentFixture<MenuComponent>;
+describe('StickyMenuComponent', () => {
+  let component: StickyMenuComponent;
+  let fixture: ComponentFixture<StickyMenuComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MenuComponent]
+      imports: [StickyMenuComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MenuComponent);
+    fixture = TestBed.createComponent(StickyMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
