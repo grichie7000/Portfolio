@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './why-me.component.html',
   styleUrls: ['./why-me.component.scss'],
 })
-export class WhyMeComponent {}
+export class WhyMeComponent {
+hovered = false;
+}
