@@ -47,11 +47,16 @@
     color: $primary-color;
     @include flexbox($gap: 4px);
     p {
-      text-decoration: none;
-
       &:hover {
         @include defaultHover();
       }
     }
   }
+}
+
+.activ-language {
+  color: $secondary-color;
+  text-underline-offset: 4px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }

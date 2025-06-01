@@ -32,10 +32,6 @@ $secondary-color: #02f4bf;
   color: $hoverColor;
 }
 
-@mixin positionAbsolut($t, $b, $l, $r) {
-  position: absolute;
-  top: $t;
-  bottom: $b;
-  left: $l;
-  right: $r;
+@mixin sectionHeight {
+  height: calc(100vh - 96px);
 }

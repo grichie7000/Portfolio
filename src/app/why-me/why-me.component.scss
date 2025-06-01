@@ -1,0 +1,96 @@
+@use "../styles/variables-and-mixins" as *;
+
+.why-me-section {
+  @include sectionHeight;
+  @include paddingSide();
+  padding-right: 240px;
+  @include flexbox($justify: space-between, $gap: 64px);
+  margin-top: 96px;
+}
+
+.why-me-img {
+  flex: 0.45;
+  height: 100%;
+  @include flexbox($align: flex-start);
+  img {
+    width: 100%;
+  }
+}
+
+.about-me {
+  flex: 0.55;
+  @include flexbox($direction: column, $justify: flex-start);
+  height: 100%;
+}
+
+.description {
+  text-align: end;
+  h3 {
+    color: $primary-color;
+    font-size: 56px;
+  }
+
+  p {
+    color: $secondary-color;
+  }
+}
+
+.i-am {
+  width: 100%;
+  margin-top: 44px;
+  @include flexbox($gap: 32px, $align: flex-start, $justify: flex-end);
+  h4 {
+    height: 100%;
+    font-size: 44px;
+    color: $primary-color;
+  }
+}
+
+.i-am-icons {
+  flex: 0.7;
+  @include flexbox($align: flex-end, $justify: flex-end, $direction: column);
+  color: $secondary-color;
+}
+
+.located {
+  @include flexbox($gap: 18px, $justify: flex-start);
+  width: 100%;
+  height: 64px;
+  padding-left: 64px;
+  img {
+    height: 32px;
+  }
+}
+
+.relocated {
+  @include flexbox($gap: 18px, $justify: space-between, $align:flex-end);
+  width: 100%;
+ height: 64px;
+  padding-left: 32px;
+  img {
+    height: 44px;
+  }
+}
+
+.relocate-icon {
+  @include flexbox($gap: 18px);
+  margin-right: 52px;
+}
+
+.work-remote {
+  @include flexbox($gap: 18px, $justify: space-between, $align:flex-end);
+  width: 100%;
+ height: 64px;
+  img {
+    height: 48px;
+  }
+}
+
+.work-remote-icon {
+  @include flexbox($gap: 18px);
+  margin-left: 96px;
+}
+
+.arrow-me {
+  height: 56px !important;
+}
