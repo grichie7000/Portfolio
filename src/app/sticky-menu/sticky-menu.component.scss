@@ -9,7 +9,7 @@
   @include flexbox($justify: space-between);
 
   .menu {
-    @include flexbox($gap: 44px);
+    @include flexbox($gap: 72px);
   }
 
   .logo {
@@ -27,7 +27,7 @@
   .navbar {
     ul {
       list-style: none;
-      @include flexbox($direction: row, $gap: 20px);
+      @include flexbox($direction: row, $gap: 56px);
 
       li {
         a {

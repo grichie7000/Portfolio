@@ -1,0 +1,75 @@
+@use "../styles/variables-and-mixins" as *;
+
+.hero-section {
+  height: calc(100vh - 96px);
+  @include flexbox($justify: space-between, $gap: 64px);
+  @include paddingSide(120px);
+
+  h1 {
+    font-size: 96px;
+    line-height: 1;
+  }
+  h2 {
+    font-size: 56px;
+    font-family: "RobotoMono-slim";
+  }
+}
+
+.name-and-contact {
+  color: $secondary-color;
+  height: 100%;
+  flex: 0.55;
+  @include flexbox(
+    $direction: column,
+    $justify: space-between,
+    $align: flex-start
+  );
+}
+
+.hero-action-buttons {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#hero-arrow {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  padding: 8px;
+  border: 1px solid transparent;
+  img {
+    height: 64px;
+    width: auto;
+  }
+  &:hover {
+    cursor: pointer;
+    border: 1px solid $primary-color;
+    filter: hue-rotate(162deg);
+  }
+}
+
+#contact-me {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  font-size: 18px;
+  color: $primary-color;
+  border: 1px solid $secondary-color;
+  padding: 32px 14px;
+  width: max-content;
+  writing-mode: sideways-lr;
+  transition: color 0.3s ease;
+  &:hover {
+    @include defaultHover();
+  }
+}
+
+.me-img {
+  flex: 0.45;
+  height: 100%;
+  img {
+    height: calc(100vh - 96px);
+  }
+}

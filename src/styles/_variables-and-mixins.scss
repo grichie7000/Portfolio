@@ -1,5 +1,5 @@
-$primary-color: #E15544;
-$secondary-color: #02F4BF;
+$primary-color: #e15544;
+$secondary-color: #02f4bf;
 
 @mixin flexbox(
   $direction: row,
@@ -16,18 +16,26 @@ $secondary-color: #02F4BF;
   gap: $gap;
 }
 
-@mixin textStroke($color:white) {
+@mixin textStroke($color: white) {
   color: transparent;
   -webkit-text-stroke: 1px $color;
   text-stroke: 1px $color;
 }
 
-@mixin paddingSide($padding:120px){
+@mixin paddingSide($padding: 120px) {
   padding-left: $padding;
   padding-right: $padding;
 }
 
-@mixin defaultHover($hoverColor:#02F4BF){
+@mixin defaultHover($hoverColor: #02f4bf) {
   cursor: pointer;
-  color:$hoverColor;
+  color: $hoverColor;
+}
+
+@mixin positionAbsolut($t, $b, $l, $r) {
+  position: absolute;
+  top: $t;
+  bottom: $b;
+  left: $l;
+  right: $r;
 }
