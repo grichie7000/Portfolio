@@ -1,0 +1,42 @@
+@use "../styles/variables-and-mixins" as *;
+
+.my-skills-section {
+  @include flexbox($direction: column);
+  @include paddingSide();
+  margin-top: 96px;
+  h3 {
+    width: 100%;
+    text-align: start;
+    color: $primary-color;
+    font-size: 56px;
+    margin-bottom: 32px;
+  }
+}
+
+.my-skills-icons-1 {
+  width: 100%;
+  @include flexbox($gap: 168px, $justify: flex-start);
+  margin-bottom: 64px;
+  img {
+    width: 100px;
+  }
+}
+
+.my-skills-icons-2 {
+  width: 100%;
+  @include flexbox($gap: 168px, $justify: flex-start);
+  margin-bottom: 64px;
+  img {
+    width: 100px;
+  }
+}
+
+.challenge-hover {
+  color: $secondary-color;
+  font-family: "Roboto-slim";
+  font-size: 20px;
+  @include flexbox($gap: 64px);
+  p {
+    word-spacing: 12px;
+  }
+}
