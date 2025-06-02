@@ -38,5 +38,11 @@
   @include flexbox($gap: 64px);
   p {
     word-spacing: 12px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
   }
+}
+
+.challenge-hover img:hover + p {
+  opacity: 1;
 }

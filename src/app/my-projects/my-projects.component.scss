@@ -1,0 +1,78 @@
+@use "../styles/variables-and-mixins" as *;
+
+.my-projects-section {
+  margin-top: 96px;
+  padding-left: 120px;
+  padding-right: 240px;
+  h3 {
+    color: $primary-color;
+    font-size: 56px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 96px;
+  }
+}
+
+.projects {
+  @include flexbox($gap: 72px, $align: flex-start);
+  color: $secondary-color;
+  h4 {
+    font-size: 44px;
+    line-height: 0.7;
+    margin-bottom: 32px;
+  }
+}
+
+.project-img {
+  flex: 0.5;
+  img {
+    width: 100%;
+  }
+}
+
+.project-description {
+  @include flexbox($direction: column, $align: flex-start);
+  flex: 0.5;
+  letter-spacing: 3px;
+}
+
+.project-skills {
+  @include flexbox($gap: 16px);
+  margin-bottom: 64px;
+  font-family: "RobotoMono-slim";
+}
+
+.project-text {
+  margin-bottom: 64px;
+  font-family: "RobotoMono-slim";
+}
+
+#git-button {
+  letter-spacing: 3px;
+  font-size: 18px;
+  color: $primary-color;
+  border: 1px solid $secondary-color;
+  padding: 14px 32px;
+  width: max-content;
+  transition: color 0.3s ease;
+  margin-right: 32px;
+  background: transparent;
+  &:hover {
+    @include defaultHover();
+  }
+}
+
+#live-test {
+  letter-spacing: 3px;
+  font-size: 18px;
+  color: #0b042d;
+  border: 1px solid $secondary-color;
+  padding: 14px 32px;
+  width: max-content;
+  transition: color 0.3s ease;
+  margin-right: 32px;
+  background: $secondary-color;
+  &:hover {
+    @include defaultHover($hoverColor: $primary-color);
+  }
+}

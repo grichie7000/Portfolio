@@ -1,7 +1,7 @@
 @use "../styles/variables-and-mixins" as *;
 
 .hero-section {
-  @include sectionHeight;
+  height: 850px;
   @include flexbox($justify: space-between, $gap: 64px);
   @include paddingSide(120px);
 
