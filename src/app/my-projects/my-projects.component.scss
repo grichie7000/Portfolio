@@ -15,6 +15,7 @@
 
 .projects {
   @include flexbox($gap: 72px, $align: flex-start);
+  margin-bottom: 64px;
   color: $secondary-color;
   h4 {
     font-size: 44px;
@@ -74,5 +75,13 @@
   background: $secondary-color;
   &:hover {
     @include defaultHover($hoverColor: $primary-color);
+  }
+}
+
+
+.reverse{
+  flex-direction: row-reverse;
+  .project-description{
+    align-items: flex-end;
   }
 }
