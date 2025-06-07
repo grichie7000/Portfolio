@@ -1,0 +1,175 @@
+@use "../styles/variables-and-mixins" as *;
+
+.contact-me-section {
+  @include paddingSide();
+  margin-top: 124px;
+  margin-bottom: 168px;
+  h3 {
+    color: $primary-color;
+    font-size: 56px;
+    margin-bottom: 32px;
+  }
+}
+
+.headline-contat-me {
+  @include flexbox($gap: 32px, $justify: flex-start);
+  img {
+    height: 48px;
+  }
+}
+
+.contact-and-text {
+  @include flexbox($gap: 32px, $justify: flex-start, $align: flex-start);
+  margin-bottom: 32px;
+  font-family: "RobotoMono-slim";
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.contact-text {
+  flex: 0.4;
+  color: $secondary-color;
+}
+
+.contact {
+  flex: 0.6;
+  @include flexbox($gap: 16px, $align: flex-start, $justify: space-between);
+  img {
+    height: 24px;
+  }
+  a {
+    color: $secondary-color;
+    text-decoration: none;
+  }
+}
+
+#arrow-start {
+  height: 56px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.contact-icon {
+  @include flexbox($gap: 16px, $justify: flex-start);
+  margin-bottom: 16px;
+}
+
+textarea {
+  resize: none;
+  overflow-y: auto;
+}
+
+form {
+  @include flexbox($direction: column, $align: flex-start);
+  color: $secondary-color;
+  a {
+    color: $primary-color;
+  }
+}
+
+.input-section {
+  @include flexbox($gap: 32px, $align: flex-start);
+  width: 100%;
+}
+
+.input-left {
+  flex: 0.4;
+  input {
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    padding: 12px 8px;
+    margin-bottom: 32px;
+    width: 100%;
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+  }
+}
+
+.input-right {
+  flex: 0.6;
+  textarea {
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    padding: 12px 8px;
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+  }
+}
+
+.check-and-submit {
+  height: max-content;
+  width: 100%;
+  @include flexbox($justify: space-between, $align: flex-start);
+
+  button {
+    margin-top: 24px;
+    padding: 12px 32px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: 2px solid grey;
+    color: grey;
+    letter-spacing: 2px;
+    font-size: 18px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.custom-checkbox {
+  font-family: "RobotoMono-slim";
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 14px;
+  a {
+    padding-left: 6px;
+    padding-right: 6px;
+    text-decoration: none;
+  }
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox .checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid $primary-color;
+  background-color: transparent;
+  margin-right: 8px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: $primary-color;
+  border: 2px solid $secondary-color;
+}
+.custom-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid $secondary-color;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  display: block;
+}
+
+.custom-checkbox:hover .checkmark {
+  background-color: $secondary-color;
+}

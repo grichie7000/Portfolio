@@ -1,0 +1,49 @@
+@use "../styles/variables-and-mixins" as *;
+
+.footer-section {
+  @include paddingSide();
+  @include flexbox($justify: space-between);
+  color: $primary-color;
+  padding-bottom: 56px;
+}
+
+.rg-logo {
+  position: relative;
+  img {
+    height: 120px;
+    margin-left: 24px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  p {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    width: max-content;
+  }
+}
+
+.copyright {
+  @include flexbox($direction: column, $justify: flex-end);
+  font-family: "RobotoMono-slim";
+  word-spacing: 2px;
+  font-size: 18px;
+  height: 120px;
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 12px;
+    margin: 0 32px;
+  }
+}
+
+.social-icons {
+  img {
+    height: 32px;
+    margin-left: 32px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

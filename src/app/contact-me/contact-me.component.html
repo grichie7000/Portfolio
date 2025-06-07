@@ -1,1 +1,75 @@
-<p>contact-me works!</p>
+<div class="contact-me-section" data-aos="fade-up" data-aos-duration="800">
+  <div class="headline-contat-me">
+    <h3>Contact me</h3>
+    <img src="/assets/img/contact-me/contact-text.png" alt="" />
+  </div>
+  <div class="contact-and-text">
+    <div class="contact-text">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime placeat
+        similique dolorum quos maiores commodi eveniet deleniti nisi amet! Eos
+        est dignissimos architecto quos nesciunt ratione vero magnam.
+      </p>
+    </div>
+    <div class="contact">
+      <div>
+        <div class="contact-icon">
+          <img src="/assets/img/contact-me/email-icon.png" alt="" />
+          <a href="mailto:someone@example.com"
+            >E-mail: test&#64;richard-geis.de</a
+          >
+        </div>
+        <div class="contact-icon">
+          <img src="\assets\img\contact-me\phone-icon.png" alt="" />
+          <a href="tel:+4733378901">Tel: +49 01702200888</a>
+        </div>
+      </div>
+      <img
+        id="arrow-start"
+        src="assets/img/contact-me/arrow-start.png"
+        alt="arrow-start"
+      />
+    </div>
+  </div>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div class="input-section">
+      <div class="input-left">
+        <div>
+          <input
+            type="text"
+            placeholder="Your Name"
+            formControlName="name"
+            required
+          />
+        </div>
+
+        <div>
+          <input
+            type="email"
+            placeholder="Your Email"
+            formControlName="email"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="input-right">
+        <textarea
+          rows="6"
+          placeholder="Your Message"
+          formControlName="message"
+          required
+        ></textarea>
+      </div>
+    </div>
+    <div class="check-and-submit">
+      <label class="custom-checkbox">
+        <input type="checkbox" formControlName="privacy" required />
+        <span class="checkmark"></span>
+        I've read the <a href="">privacy policy</a> and agree to the processing
+        of my data as outlined
+      </label>
+      <button type="submit">Send</button>
+    </div>
+  </form>
+</div>
