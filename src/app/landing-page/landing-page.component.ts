@@ -4,10 +4,11 @@ import { HeroComponent } from '../hero/hero.component';
 import { WhyMeComponent } from '../why-me/why-me.component';
 import { MySkillsComponent } from "../my-skills/my-skills.component";
 import { MyProjectsComponent } from '../my-projects/my-projects.component';
+import { TeamplayerComponent } from '../teamplayer/teamplayer.component';
 
 @Component({
   selector: 'app-landingpage',
-  imports: [StickyMenuComponent, HeroComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent],
+  imports: [StickyMenuComponent, HeroComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, TeamplayerComponent],
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss']
 })

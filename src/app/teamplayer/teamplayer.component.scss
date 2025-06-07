@@ -1,0 +1,39 @@
+@use "../styles/variables-and-mixins" as *;
+
+.teamplayer-section {
+  padding-left: 120px;
+  padding-right: 240px;
+  letter-spacing: 3px;
+  h5 {
+    color: $primary-color;
+    font-size: 24px;
+     margin-bottom: 44px;
+  }
+}
+
+.recession-arrow{
+    margin-left: 32px;
+     @include flexbox($gap:32px, $justify:space-between, $align:flex-start);
+  img{
+    height: 80px;
+  }
+}
+
+.recession {
+  @include flexbox($justify:space-between);
+  p {
+    color: $secondary-color;
+    font-family: "RobotoMono-slim";
+  }
+}
+
+.recession-text {
+    h5{
+        margin-bottom: 0px;
+    }
+}
+
+
+.project-recession{
+    margin-bottom: 20px;
+}
