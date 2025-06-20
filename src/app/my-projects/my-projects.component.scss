@@ -78,10 +78,65 @@
   }
 }
 
-
-.reverse{
+.reverse {
   flex-direction: row-reverse;
-  .project-description{
+  .project-description {
     align-items: flex-end;
   }
+}
+
+.text-reverse{
+  text-align: end;
+}
+
+@media (max-width: 1800px) and (min-width: 1440px) {
+  .my-projects-section {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 1021px) {
+  .my-projects-section {
+    padding-left: 60px;
+    padding-right: 60px;
+
+    h3 {
+      font-size: 44px;
+    }
+  }
+
+  .projects {
+  gap: 32px;
+  font-size: 16px;
+  h4 {
+    font-size: 36px;
+    line-height: 0.7;
+    margin-bottom: 24px;
+  }
+}
+
+.project-skills{
+  margin-bottom: 32px;
+  gap: 4px;
+}
+
+.project-text{
+  margin-bottom: 38px;
+}
+.project-description{
+  letter-spacing: 2px;
+}
+
+
+#git-button {
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+#live-test {
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
 }

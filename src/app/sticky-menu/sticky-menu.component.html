@@ -3,18 +3,27 @@
     <div class="logo">
       <a href="#"><img src="/assets/img/logo-orange.png" alt="logo" /></a>
     </div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#why-me">Why me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="language-switch">
-    <p>DE</p>
-    <span>|</span>
-    <p class="activ-language">EN</p>
+
+    <div (click)="toggleMenu()" class="burger" [class.active]="isMenuOpen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="navbar" [class.active-menu]="isMenuOpen">
+      <nav>
+        <ul>
+          <li><a href="#why-me">Why me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="language-switch">
+        <p>DE</p>
+        <span>|</span>
+        <p class="activ-language">EN</p>
+      </div>
+    </div>
   </div>
 </div>

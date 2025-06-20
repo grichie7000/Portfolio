@@ -8,20 +8,20 @@
   h5 {
     color: $primary-color;
     font-size: 24px;
-     margin-bottom: 44px;
+    margin-bottom: 44px;
   }
 }
 
-.recession-arrow{
-    margin-left: 32px;
-     @include flexbox($gap:32px, $justify:space-between, $align:flex-start);
-  img{
+.recession-arrow {
+  margin-left: 32px;
+  @include flexbox($gap: 32px, $justify: space-between, $align: flex-start);
+  img {
     height: 80px;
   }
 }
 
 .recession {
-  @include flexbox($justify:space-between);
+  @include flexbox($justify: space-between);
   p {
     color: $secondary-color;
     font-family: "RobotoMono-slim";
@@ -29,12 +29,44 @@
 }
 
 .recession-text {
-    h5{
-        margin-bottom: 0px;
-    }
+  h5 {
+    margin-bottom: 0px;
+  }
 }
 
+.project-recession {
+  margin-bottom: 20px;
+}
 
-.project-recession{
-    margin-bottom: 20px;
+@media (max-width: 1800px) and (min-width: 1440px) {
+  .teamplayer-section {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 1021px) {
+  .teamplayer-section {
+    padding-left: 60px;
+    padding-right: 60px;
+
+      h5{
+   font-size: 18px !important; 
+  }
+  }
+
+  .recession-arrow {
+    margin-left: 22px;
+          font-size: 16px;
+    img {
+      height: 72px;
+    }
+  }
+
+  .recession {
+    gap:46px;
+    p {
+      font-size: 16px;
+    }
+  }
 }

@@ -43,10 +43,25 @@
   }
 }
 
+#mail-to:hover img {
+  cursor: pointer;
+  filter: hue-rotate(164deg) brightness(1.3) contrast(1.2);
+}
+
+#call-to:hover img {
+  cursor: pointer;
+  filter: hue-rotate(164deg) brightness(1.3) contrast(1.2);
+}
+
 #arrow-start {
-  height: 56px;
+  height: 70px;
+  border: 1px solid transparent;
+  transition: filter 0.3s ease, color 0.3s ease, border 0.3s ease;
+  padding: 8px;
   &:hover {
     cursor: pointer;
+    border: 1px solid $primary-color;
+    filter: hue-rotate(164deg) brightness(1.3) contrast(1.2);
   }
 }
 
@@ -172,4 +187,39 @@ form {
 
 .custom-checkbox:hover .checkmark {
   background-color: $secondary-color;
+}
+
+label a:hover {
+  font-weight: bold;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+    border: 1px solid $secondary-color;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+
+@media (max-width: 1800px) and (min-width: 1440px) {
+
+
+}
+
+@media (max-width: 1440px) and (min-width: 1021px) {
+  .contact-me-section{
+    padding-left: 60px;
+    padding-right: 60px;
+  margin-bottom: 124px;
+    h3{
+      font-size: 44px;
+    }
+  }
+
+  .headline-contat-me {
+  img {
+    height: 38px;
+  }
+}
 }

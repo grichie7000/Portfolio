@@ -4,6 +4,8 @@
   @include flexbox($direction: column);
   @include paddingSide();
   margin-top: 96px;
+  color: $secondary-color;
+
   h3 {
     width: 100%;
     text-align: start;
@@ -11,38 +13,255 @@
     font-size: 56px;
     margin-bottom: 32px;
   }
+
+  img {
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .btn {
+    display: none;
+  }
 }
 
 .my-skills-icons-1 {
   width: 100%;
-  @include flexbox($gap: 168px, $justify: flex-start);
-  margin-bottom: 64px;
-  img {
-    width: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  div {
+    width: 100%;
   }
 }
 
 .my-skills-icons-2 {
   width: 100%;
-  @include flexbox($gap: 168px, $justify: flex-start);
-  margin-bottom: 64px;
-  img {
-    width: 100px;
+  display: flex;
+  justify-content: space-between;
+  div {
+    width: 100%;
   }
 }
 
-.challenge-hover {
+.hover-text {
+  position: absolute;
+  top: 10px;
+  left: 140px;
   color: $secondary-color;
-  font-family: "Roboto-slim";
-  font-size: 20px;
-  @include flexbox($gap: 64px);
-  p {
-    word-spacing: 12px;
-    transition: opacity 0.3s ease;
-    opacity: 0;
+  font-family: "RobotoMono-slim";
+  font-size: 16px;
+  width: 240px;
+  word-spacing: 12px;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+#challenge img:hover + .hover-text {
+  opacity: 1;
+}
+
+.mobile-text {
+  display: none;
+}
+
+#challenge {
+  width: 100%;
+  position: relative;
+}
+
+.arrow-down {
+  display: none;
+}
+
+.hover-text-mobile {
+  display: none;
+}
+
+.touch-device {
+  opacity: 1;
+}
+
+@media (max-width: 1800px) and (min-width: 1441px) {
+  .my-skills-section {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .hover-text {
+    width: 200px;
+    font-size: 18px;
+    left: 160px;
   }
 }
 
-.challenge-hover img:hover + p {
-  opacity: 1;
+@media (max-width: 1440px) and (min-width: 1021px) {
+  .my-skills-section {
+    padding-left: 60px;
+    padding-right: 60px;
+    align-items: flex-start;
+    overflow-x: hidden;
+
+    h3 {
+      font-size: 44px;
+    }
+  }
+
+  .hover-text {
+    width: 200px;
+    font-size: 16px;
+    left: 120px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .my-skills-section {
+    padding-left: 60px;
+    padding-right: 60px;
+    align-items: flex-start;
+    overflow-x: hidden;
+
+    h3 {
+      text-align: center;
+      font-size: 44px;
+    }
+  }
+
+  .hover-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 196px;
+    color: $secondary-color;
+    font-family: "RobotoMono-slim";
+    font-size: 18px;
+    letter-spacing: 4px;
+    transition: opacity 0.4s ease;
+  }
+
+  .my-skills-icons-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 0;
+    div {
+      margin-bottom: 42px;
+      display: flex;
+      justify-content: center;
+      height: 75%;
+      img {
+        height: 52px;
+      }
+    }
+  }
+
+  .my-skills-icons-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    div {
+      margin-bottom: 42px;
+      display: flex;
+      justify-content: center;
+      height: 75%;
+      img {
+        height: 52px;
+      }
+    }
+  }
+
+  .arrow-down {
+    width: 100%;
+    margin-bottom: 18px;
+    @include flexbox;
+    img {
+      height: 72px;
+    }
+  }
+
+  .hover-text-mobile {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-family: "RobotoMono-slim";
+    color: $secondary-color;
+    margin-bottom: 36px;
+  }
+
+  .btn {
+    display: flex !important;
+    width: 100%;
+    @include flexbox();
+    button {
+      font-size: 16px;
+      font-family: "RobotoMono-slim";
+      padding: 12px 32px;
+      border: none;
+      border-radius: 0;
+      letter-spacing: 2px;
+      background-color: $secondary-color;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 460px) and (min-width: 320px) {
+  .my-skills-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .mobile-text {
+    font-size: 16px !important;
+    top: 0px;
+  }
+
+  .hover-text-mobile {
+    font-size: 16px;
+  }
+
+  .my-skills-icons-1 {
+    img {
+      height: 38px !important;
+    }
+  }
+
+  .my-skills-icons-2 {
+    img {
+      height: 38px !important;
+    }
+  }
+
+  .btn {
+
+    button{
+    letter-spacing: 1px !important;
+    padding: 8px 24px !important;
+    font-size: 16px !important;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .mobile-text {
+    left: 144px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mobile-text {
+    left: 96px;
+  }
+}
+
+@media (max-width: 340px) {
+  .mobile-text {
+    font-size: 14px !important;
+    left: 70px;
+  }
 }
