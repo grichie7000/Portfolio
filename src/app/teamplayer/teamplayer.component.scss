@@ -12,6 +12,10 @@
   }
 }
 
+.recession-mobile {
+  display: none !important;
+}
+
 .recession-arrow {
   margin-left: 32px;
   @include flexbox($gap: 32px, $justify: space-between, $align: flex-start);
@@ -29,6 +33,7 @@
 }
 
 .recession-text {
+  width: 332px;
   h5 {
     margin-bottom: 0px;
   }
@@ -43,6 +48,10 @@
     padding-left: 120px;
     padding-right: 120px;
   }
+
+  .recession-text {
+    width: 280px;
+  }
 }
 
 @media (max-width: 1440px) and (min-width: 1021px) {
@@ -50,23 +59,138 @@
     padding-left: 60px;
     padding-right: 60px;
 
-      h5{
-   font-size: 18px !important; 
-  }
+    h5 {
+      font-size: 18px !important;
+    }
   }
 
+  .recession-text {
+    width: 225px;
+  }
   .recession-arrow {
     margin-left: 22px;
-          font-size: 16px;
+    font-size: 16px;
     img {
       height: 72px;
     }
   }
 
   .recession {
-    gap:46px;
+    gap: 46px;
     p {
       font-size: 16px;
     }
+  }
+}
+
+@media (max-width: 1020px) and (min-width: 320px) {
+  #headline-team {
+    @include flexbox($direction: column);
+    width: 100%;
+  }
+
+  .recession::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .recession::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+
+  .recession::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .teamplayer-section {
+    padding-right: 60px;
+    padding-left: 60px;
+    font-size: 18px;
+    @include flexbox($direction: column, $align: flex-start);
+  }
+
+  .recession-mobile {
+    display: block !important;
+  }
+
+  .lowercase {
+    font-family: "RobotoMono-slim";
+    font-weight: 100;
+    text-align: center;
+  }
+
+  .recession-arrow {
+    display: none;
+  }
+
+  .recession-text {
+    border: 2px solid $secondary-color;
+    padding: 24px;
+    flex-shrink: 0;
+  }
+
+  .recession {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    gap: 16px;
+    width: calc(100vw - 148px);
+  }
+}
+
+@media (max-width: 780px) {
+  h5 {
+    font-size: 24px !important;
+    letter-spacing: 1px !important;
+  }
+
+  .lowercase {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .recession-text {
+    padding: 12px;
+    letter-spacing: 0px;
+  }
+}
+
+@media (max-width: 590px) {
+  .recession {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    gap: 16px;
+    width: calc(100vw - 148px);
+  }
+
+  .recession-text {
+    padding: 12px;
+    font-size: 16px;
+    width: 289px;
+  }
+}
+
+@media (max-width: 460px) and (min-width: 320px) {
+  .teamplayer-section {
+    padding-left: 18px;
+    padding-right: 18px;
+    h5 {
+      font-size: 20px !important;
+    }
+  }
+
+  .recession-text {
+    width: 220px;
+  }
+
+  .recession {
+    width: calc(100vw - 56px);
+  }
+
+  #lowercase{
+    font-size: 16px !important;
   }
 }

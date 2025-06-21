@@ -37,6 +37,13 @@
   letter-spacing: 3px;
 }
 
+.project-description-mobile {
+  @include flexbox($direction: column, $align: flex-start);
+  flex: 0.5;
+  letter-spacing: 3px;
+  display: none;
+}
+
 .project-skills {
   @include flexbox($gap: 16px);
   margin-bottom: 64px;
@@ -85,8 +92,12 @@
   }
 }
 
-.text-reverse{
+.text-reverse {
   text-align: end;
+}
+
+.mobile-buttons {
+  display: none;
 }
 
 @media (max-width: 1800px) and (min-width: 1440px) {
@@ -107,36 +118,140 @@
   }
 
   .projects {
-  gap: 32px;
-  font-size: 16px;
-  h4 {
-    font-size: 36px;
-    line-height: 0.7;
-    margin-bottom: 24px;
+    gap: 32px;
+    font-size: 16px;
+    h4 {
+      font-size: 36px;
+      line-height: 0.7;
+      margin-bottom: 24px;
+    }
+  }
+
+  .project-skills {
+    margin-bottom: 32px;
+    gap: 4px;
+  }
+
+  .project-text {
+    margin-bottom: 38px;
+  }
+  .project-description {
+    letter-spacing: 2px;
+  }
+
+  #git-button {
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+
+  #live-test {
+    letter-spacing: 1px;
+    font-size: 16px;
   }
 }
 
-.project-skills{
-  margin-bottom: 32px;
-  gap: 4px;
+@media (max-width: 1020px) and (min-width: 320px) {
+  .my-projects-section {
+    padding-right: 60px;
+    padding-left: 60px;
+    font-size: 18px;
+  }
+
+  .project-description {
+    display: none;
+  }
+  .project-description-mobile {
+    display: flex;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .project-text {
+    margin-bottom: 0;
+  }
+
+  .text-reverse {
+    text-align: start !important;
+  }
+
+  .project-skills {
+    margin-bottom: 16px;
+    justify-content: start;
+  }
+
+  .mobile-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 38px;
+  }
+
+  .project-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
+
+  .mobile-buttons {
+    width: 100%;
+
+    #git-button {
+      letter-spacing: 1px;
+      padding: 14px 29px;
+    }
+
+    #live-test {
+      letter-spacing: 1px;
+      padding: 14px 29px;
+    }
+  }
 }
 
-.project-text{
-  margin-bottom: 38px;
-}
-.project-description{
-  letter-spacing: 2px;
+@media (max-width: 460px) and (min-width: 320px) {
+  .my-projects-section {
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 16px;
+    h3 {
+      font-size: 32px;
+    }
+    h4 {
+      font-size: 28px !important;
+    }
+  }
+
+  .mobile-buttons {
+    width: 100%;
+
+    #git-button {
+      letter-spacing: 1px;
+      font-size: 16px;
+      padding: 14px 24px;
+    }
+
+    #live-test {
+      letter-spacing: 1px;
+      font-size: 16px;
+      padding: 14px 24px;
+      margin-right: 0;
+    }
+  }
 }
 
-
-#git-button {
-  letter-spacing: 1px;
-  font-size: 16px;
+@media (max-width: 590px) {
+  .my-projects-section {
+    font-size: 16px !important;
+  }
 }
 
-#live-test {
-  letter-spacing: 1px;
-  font-size: 16px;
-}
-
+@media (max-width: 780px) {
+  .project-skills {
+    flex-wrap: wrap;
+  }
 }
