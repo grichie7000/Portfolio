@@ -110,6 +110,11 @@
   visibility: visible !important;
 }
 
+.nav-link.active {
+  color: $secondary-color !important;
+  text-decoration: underline !important;
+}
+
 // responsiv -----------------------------------------
 @media (max-width: 1440px) and (min-width: 1021px) {
   .sticky-header {

@@ -27,9 +27,7 @@ export class MySkillsComponent implements OnInit {
 
   private detectTouchDevice(): void {
     this.isTouchDevice = 
-      'ontouchstart' in window || navigator.maxTouchPoints > 0;
-      console.log(this.isTouchDevice);
-      
+      'ontouchstart' in window || navigator.maxTouchPoints > 0;      
   }
 }
 
