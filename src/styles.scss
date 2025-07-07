@@ -39,3 +39,13 @@ body {
   justify-content: center;
   scroll-behavior: smooth !important;
 }
+
+html {
+  scroll-padding-top: 92px;
+}
+
+@media (max-width: 1020px) {
+  html {
+    scroll-padding-top: 320px;
+  }
+}

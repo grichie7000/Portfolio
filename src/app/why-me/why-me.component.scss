@@ -20,11 +20,15 @@
     background-color: $secondary-color;
     font-weight: 700;
     transition: color 0.2s ease;
+    &:hover {
+      @include defaultHover($hoverColor: $primary-color);
+      a {
+        color: $primary-color;
+        cursor: pointer;
+      }
+    }
     a {
       text-decoration: none;
-      &:hover {
-        @include defaultHover($hoverColor: $primary-color);
-      }
     }
   }
 }
@@ -37,6 +41,7 @@
     width: 530px;
     height: 480px;
     object-fit: cover;
+    filter: brightness(1.1);
   }
 }
 

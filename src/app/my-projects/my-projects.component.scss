@@ -55,7 +55,7 @@
   font-family: "RobotoMono-slim";
 }
 
-#git-button {
+.git-button {
   letter-spacing: 3px;
   font-size: 18px;
   color: $primary-color;
@@ -70,7 +70,7 @@
   }
 }
 
-#live-test {
+.live-test {
   letter-spacing: 3px;
   font-size: 18px;
   color: #0b042d;
@@ -139,12 +139,12 @@
     letter-spacing: 2px;
   }
 
-  #git-button {
+  .git-button {
     letter-spacing: 1px;
     font-size: 16px;
   }
 
-  #live-test {
+  .live-test {
     letter-spacing: 1px;
     font-size: 16px;
   }
@@ -201,12 +201,12 @@
   .mobile-buttons {
     width: 100%;
 
-    #git-button {
+    .git-button {
       letter-spacing: 1px;
       padding: 14px 29px;
     }
 
-    #live-test {
+    .live-test {
       letter-spacing: 1px;
       padding: 14px 29px;
     }
@@ -229,13 +229,13 @@
   .mobile-buttons {
     width: 100%;
 
-    #git-button {
+    .git-button {
       letter-spacing: 1px;
       font-size: 16px;
       padding: 14px 24px;
     }
 
-    #live-test {
+    .live-test {
       letter-spacing: 1px;
       font-size: 16px;
       padding: 14px 24px;
