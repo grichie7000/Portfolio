@@ -5,12 +5,7 @@
   </div>
   <div class="contact-and-text">
     <div class="contact-text">
-      <p>
-        Ich entwickle nicht nur Code, ich entwickle Lösungen. Wenn du einen
-        zuverlässigen Partner für dein Projekt suchst, der mitdenkt, mitlernt
-        und mitgestaltet, dann schreib mir. Ich bin offen für neue Ideen und
-        Herausforderungen.
-      </p>
+      <p>{{ "CONTACT.INTRO" | translate }}</p>
     </div>
     <div class="contact">
       <div>
@@ -37,7 +32,7 @@
         <div>
           <input
             type="text"
-            placeholder="Dein Name"
+            [placeholder]="'CONTACT.PLACEHOLDER_NAME' | translate"
             formControlName="name"
             required
           />
@@ -46,7 +41,7 @@
         <div>
           <input
             type="email"
-            placeholder="Deine Email"
+            [placeholder]="'CONTACT.PLACEHOLDER_EMAIL' | translate"
             formControlName="email"
             required
           />
@@ -56,7 +51,7 @@
       <div class="input-right">
         <textarea
           rows="6"
-          placeholder="Deine Nachricht"
+          [placeholder]="'CONTACT.PLACEHOLDER_MESSAGE' | translate"
           formControlName="message"
           required
         ></textarea>
@@ -67,13 +62,16 @@
         <input type="checkbox" formControlName="privacy" required />
         <div class="mobile-text">
           <span class="checkmark"></span>
-          <span>
-            Ich habe die <a href="#">Datenschutzerklärung</a> gelesen und stimme
-            der Verarbeitung meiner Daten wie darin beschrieben zu.
-          </span>
+          <p class="privacy-text">
+            {{ "CONTACT.PRIVACY_TEXT_START" | translate }}
+            <a (click)="navigateToPrivacyPolicy()">{{
+              "CONTACT.PRIVACY_LINK" | translate
+            }}</a>
+            {{ "CONTACT.PRIVACY_TEXT_END" | translate }}
+          </p>
         </div>
       </label>
-      <button type="submit">Send</button>
+      <button type="submit">{{ "CONTACT.SEND_BUTTON" | translate }}</button>
     </div>
   </form>
   <div class="contact-mobile">

@@ -1,23 +1,32 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-privacy-policy',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './privacy-policy.component.html',
-  styleUrl: './privacy-policy.component.scss'
+  styleUrl: './privacy-policy.component.scss',
 })
 export class PrivacyPolicyComponent {
-    constructor(private router:Router){}
-  navigateToLegalNotice(){
-    this.router.navigateByUrl("/legal-notice")
+  currentLang: string = 'de';
+  constructor(private router: Router, private translate: TranslateService) {
+    const savedLang = localStorage.getItem('lang') || 'de';
+    this.translate.use(savedLang);
+    this.currentLang = savedLang;
   }
 
-  navigateToPrivacyPolicy(){
-    this.router.navigateByUrl("/privacy-policy")
+    switchLang(lang: string) {
+    this.translate.use(lang);
+    this.currentLang = lang;
+    localStorage.setItem('lang', lang);
   }
 
-    navigateToMainpage(){
-    this.router.navigateByUrl("/landing-page")
+  navigateToLegalNotice() {
+    this.router.navigateByUrl('/legal-notice');
+  }
+
+  navigateToMainpage() {
+    this.router.navigateByUrl('/landing-page');
   }
 }

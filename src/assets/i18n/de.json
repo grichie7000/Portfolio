@@ -1,0 +1,103 @@
+{
+  "NAV": {
+    "PROJECTS": "Projekte",
+    "CONTACT": "Kontakt"
+  },
+
+  "WHY_ME": {
+    "TEXT": "Hallo, ich bin Webentwickler mit Leidenschaft für moderne, performante Lösungen. Ich suche neue Projekte, bei denen ich meine Erfahrung einbringen und gemeinsam mit Ihnen digitale Ideen umsetzen kann. Sie planen etwas Neues? Schreiben Sie mir, ich freue mich darauf!"
+  },
+  "SKILLS": {
+    "STATEMENT": "Ich freue mich immer darauf neue Technologien zu lernen, sag mir einfach was du brauchst."
+  },
+  "PROJECTS": {
+    "CARD_1": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, und weise Benutzern und Kategorien zu.",
+    "CARD_2": "Spring-, Lauf- und Wurfspiel auf objektorientierter Basis. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+    "CARD_3": "Gemeinsam mit meinem Team entwickle ich in diesem Projekt einen geschäftlich orientierten Chat-Client. Eine Plattform ähnlich wie Discord, WhatsApp oder Slack, jedoch speziell für Business-Anforderungen ausgelegt."
+  },
+  "TESTIMONIALS": {
+    "QUOTE_1": "Richard bringt nicht nur technisches Know-how mit, sondern hört auch gut zu und bringt konstruktive Vorschläge ins Team ein. Manchmal war er etwas zu detailverliebt, aber gerade das hat oft zu hochwertigen Ergebnissen geführt.",
+    "QUOTE_2": "Technisch top, aber was ich wirklich an der Zusammenarbeit geschätzt habe, war die Offenheit für Feedback.",
+    "QUOTE_3": "Richard ist jemand, auf den man sich verlassen kann. In stressigen Phasen bleibt er ruhig, lösungsorientiert und hat das Team gut unterstützt.",
+    "TITLE_DE": "Das sagen meine Kollegen über mich",
+    "PROJECT_JOIN": "Projekt Join",
+    "PROJECT_KOCHWELT": "Projekt Kochwelt"
+  },
+  "CONTACT": {
+    "INTRO": "Ich entwickle nicht nur Code, ich entwickle Lösungen. Wenn du einen zuverlässigen Partner für dein Projekt suchst, der mitdenkt, mitlernt und mitgestaltet, dann schreib mir. Ich bin offen für neue Ideen und Herausforderungen.",
+    "PRIVACY_TEXT_START": "Ich habe die",
+    "PRIVACY_LINK": "Datenschutzerklärung",
+    "PRIVACY_TEXT_END": "gelesen und stimme der Verarbeitung meiner Daten wie darin beschrieben zu.",
+    "SEND_BUTTON":"Senden",
+    "PLACEHOLDER_MESSAGE": "Deine Nachricht",
+    "PLACEHOLDER_EMAIL": "Deine Email",
+    "PLACEHOLDER_NAME": "Dein Name"
+  },
+    "FOOTER": {
+    "PRIVACY_POLICY": "Datenschutz",
+    "LEGAL_NOTICE": "Impressum"
+  },
+  "IMPRINT": {
+    "TITLE": "Impressum",
+    "LEGAL_INFO": "Angaben gemäß § 5 TMG:",
+    "ADDRESS": "Max Mustermann\nMusterstraße 12\n12345 Musterstadt\nDeutschland",
+    "CONTACT": "Kontakt:",
+    "PHONE": "Telefon: 0123 456789",
+    "EMAIL": "E-Mail: maxmustermann.de",
+    "RESPONSIBLE": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
+    "NOTE": "Hinweis:",
+    "DISCLAIMER": "Diese Webseite ist eine private Landingpage und dient ausschließlich der persönlichen Bewerbung von Max Mustermann. Es erfolgt keine kommerzielle Nutzung."
+  },
+    "PRIVACY": {
+    "TITLE": "Datenschutzerklärung",
+
+    "SECTION_1_TITLE": "1. Allgemeine Hinweise",
+    "SECTION_1_TEXT_1": "Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und Zweck der Verarbeitung personenbezogener Daten auf dieser Webseite.",
+    "SECTION_1_TEXT_2": "Diese Webseite dient ausschließlich der persönlichen Bewerbung von Max Mustermann und wird privat betrieben. Es findet keine kommerzielle Nutzung statt.",
+
+    "SECTION_2_TITLE": "2. Verantwortliche Stelle",
+    "SECTION_2_TEXT": "Max Mustermann\nMusterstraße 12\n12345 Musterstadt\nE-Mail: maxmustermann.de",
+
+    "SECTION_3_TITLE": "3. Zugriffsdaten / Server-Logfiles",
+    "SECTION_3_TEXT_1": "Beim Besuch dieser Webseite werden durch den Hostinganbieter IONOS automatisch Informationen erfasst und in sogenannten Server-Logfiles gespeichert:",
+    "SECTION_3_LI_1": "Besuchte Seite",
+    "SECTION_3_LI_2": "Datum und Uhrzeit des Zugriffs",
+    "SECTION_3_LI_3": "Übertragene Datenmenge",
+    "SECTION_3_LI_4": "Browsertyp und Browserversion",
+    "SECTION_3_LI_5": "Verwendetes Betriebssystem",
+    "SECTION_3_LI_6": "Referrer-URL",
+    "SECTION_3_LI_7": "IP-Adresse (anonymisiert)",
+    "SECTION_3_TEXT_2": "Diese Daten dienen ausschließlich der technischen Sicherheit. Eine Zusammenführung mit anderen Datenquellen erfolgt nicht.",
+
+    "SECTION_4_TITLE": "4. Kontaktformular",
+    "SECTION_4_TEXT_1": "Wenn Sie das Kontaktformular nutzen, werden die eingegebenen Daten (z.B. Name, E-Mail-Adresse, Nachricht) per E-Mail an mich übermittelt.",
+    "SECTION_4_TEXT_2": "Die Verarbeitung erfolgt ausschließlich zur Bearbeitung Ihrer Anfrage. Es erfolgt keine Weitergabe an Dritte. Das Formular nutzt ein eigenes PHP-Skript ohne externe Dienste.",
+
+    "SECTION_5_TITLE": "5. Verwendung von Google Fonts",
+    "SECTION_5_TEXT_1": "Zur Darstellung einheitlicher Schriftarten verwendet diese Webseite Google Fonts, die lokal eingebunden sind.",
+    "SECTION_5_TEXT_2": "Es erfolgt kein externer Zugriff auf Google-Server. Beim Laden der Seite werden keine personenbezogenen Daten an Google übertragen.",
+
+    "SECTION_6_TITLE": "6. Bilder und Medien",
+    "SECTION_6_TEXT": "Alle auf dieser Webseite verwendeten Bilder stammen von Max Mustermann persönlich. Es werden keine externen oder lizenzpflichtigen Bildquellen verwendet.",
+
+    "SECTION_7_TITLE": "7. Externe Links (LinkedIn, GitHub)",
+    "SECTION_7_TEXT_1": "Diese Webseite enthält Links zu externen Profilen von Max Mustermann bei LinkedIn und GitHub.",
+    "SECTION_7_TEXT_2": "Beim Klicken auf einen dieser Links verlassen Sie diese Webseite. Es gelten dann die Datenschutzrichtlinien der jeweiligen Plattform:",
+    "SECTION_7_LINKEDIN": "LinkedIn: https://www.linkedin.com/legal/privacy-policy",
+    "SECTION_7_GITHUB": "GitHub: https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement",
+    "SECTION_7_TEXT_3": "Beim bloßen Besuch dieser Webseite findet keine automatische Datenübertragung an diese Dienste statt.",
+
+    "SECTION_8_TITLE": "8. Ihre Rechte",
+    "SECTION_8_TEXT_1": "Sie haben das Recht auf:",
+    "SECTION_8_LI_1": "Auskunft über Ihre gespeicherten personenbezogenen Daten",
+    "SECTION_8_LI_2": "Berichtigung unrichtiger Daten",
+    "SECTION_8_LI_3": "Löschung Ihrer Daten (sofern keine gesetzlichen Aufbewahrungspflichten bestehen)",
+    "SECTION_8_TEXT_2": "Für Anfragen genügt eine formlose E-Mail an: max.de",
+
+    "SECTION_9_TITLE": "9. Hosting",
+    "SECTION_9_TEXT": "Diese Webseite wird gehostet bei:\nIONOS SE\nElgendorfer Str. 57\n56410 Montabaur\nhttps://www.ionos.de/terms-gtc/datenschutzerklaerung",
+
+    "SECTION_10_TITLE": "10. Änderungen dieser Datenschutzerklärung",
+    "SECTION_10_TEXT": "Ich behalte mir vor, diese Datenschutzerklärung bei Bedarf anzupassen. Es gilt die jeweils aktuelle Version zum Zeitpunkt des Besuchs."
+  }
+}

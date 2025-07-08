@@ -1,133 +1,114 @@
-
-
 <div class="privacy-policy">
   <div class="header-legally">
     <div class="logo">
-      <img (click)="navigateToMainpage()" src="/assets/img/logo-orange.png" alt="logo" />
+      <img
+        (click)="navigateToMainpage()"
+        src="/assets/img/logo-orange.png"
+        alt="logo"
+      />
     </div>
     <div class="language-switch">
-      <p class="activ-language">DE</p>
+      <p
+        (click)="switchLang('de')"
+        [class.activ-language]="currentLang === 'de'"
+      >
+        DE
+      </p>
       <span>|</span>
-      <p>EN</p>
+      <p
+        (click)="switchLang('en')"
+        [class.activ-language]="currentLang === 'en'"
+      >
+        EN
+      </p>
     </div>
   </div>
 
   <div class="privacy-policy-text">
     <div class="back-arrow">
-      <img (click)="navigateToMainpage()" src="/assets/img/hero/arrow-down.png" alt="back to mainpage" />
+      <img
+        (click)="navigateToMainpage()"
+        src="/assets/img/hero/arrow-down.png"
+        alt="back to mainpage"
+      />
     </div>
-<h1>Datenschutzerklärung</h1>
+<h1>{{ 'PRIVACY.TITLE' | translate }}</h1>
 
-<h2>1. Allgemeine Hinweise</h2>
-<p>
-  Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und Zweck der Verarbeitung personenbezogener Daten auf dieser Webseite.
-</p>
-<p>
-  Diese Webseite dient ausschließlich der persönlichen Bewerbung von Max Mustermann und wird privat betrieben. Es findet keine kommerzielle Nutzung statt.
-</p>
+<h2>{{ 'PRIVACY.SECTION_1_TITLE' | translate }}</h2>
+<p>{{ 'PRIVACY.SECTION_1_TEXT_1' | translate }}</p>
+<p>{{ 'PRIVACY.SECTION_1_TEXT_2' | translate }}</p>
 
-<h2>2. Verantwortliche Stelle</h2>
+<h2>{{ 'PRIVACY.SECTION_2_TITLE' | translate }}</h2>
 <p>
-  Max Mustermann<br />
-  Musterstraße 12<br />
-  12345 Musterstadt<br />
-  E-Mail: <a href="mailto:max@mustermann.de">maxmustermann.de</a>
+  {{ 'PRIVACY.SECTION_2_TEXT' | translate }}
 </p>
 
-<h2>3. Zugriffsdaten / Server-Logfiles</h2>
-<p>
-  Beim Besuch dieser Webseite werden durch den Hostinganbieter IONOS automatisch Informationen erfasst und in sogenannten Server-Logfiles gespeichert:
-</p>
+<h2>{{ 'PRIVACY.SECTION_3_TITLE' | translate }}</h2>
+<p>{{ 'PRIVACY.SECTION_3_TEXT_1' | translate }}</p>
 <ul>
-  <li>Besuchte Seite</li>
-  <li>Datum und Uhrzeit des Zugriffs</li>
-  <li>Übertragene Datenmenge</li>
-  <li>Browsertyp und Browserversion</li>
-  <li>Verwendetes Betriebssystem</li>
-  <li>Referrer-URL</li>
-  <li>IP-Adresse (anonymisiert)</li>
+  <li>{{ 'PRIVACY.SECTION_3_LI_1' | translate }}</li>
+  <li>{{ 'PRIVACY.SECTION_3_LI_2' | translate }}</li>
+  <li>{{ 'PRIVACY.SECTION_3_LI_3' | translate }}</li>
+  <li>{{ 'PRIVACY.SECTION_3_LI_4' | translate }}</li>
+  <li>{{ 'PRIVACY.SECTION_3_LI_5' | translate }}</li>
+  <li>{{ 'PRIVACY.SECTION_3_LI_6' | translate }}</li>
+  <li>{{ 'PRIVACY.SECTION_3_LI_7' | translate }}</li>
+</ul>
+<p>{{ 'PRIVACY.SECTION_3_TEXT_2' | translate }}</p>
+
+<h2>{{ 'PRIVACY.SECTION_4_TITLE' | translate }}</h2>
+<p>{{ 'PRIVACY.SECTION_4_TEXT_1' | translate }}</p>
+<p>{{ 'PRIVACY.SECTION_4_TEXT_2' | translate }}</p>
+
+<h2>{{ 'PRIVACY.SECTION_5_TITLE' | translate }}</h2>
+<p>{{ 'PRIVACY.SECTION_5_TEXT_1' | translate }}</p>
+<p>{{ 'PRIVACY.SECTION_5_TEXT_2' | translate }}</p>
+
+<h2>{{ 'PRIVACY.SECTION_6_TITLE' | translate }}</h2>
+<p>{{ 'PRIVACY.SECTION_6_TEXT' | translate }}</p>
+
+<h2>{{ 'PRIVACY.SECTION_7_TITLE' | translate }}</h2>
+<p>{{ 'PRIVACY.SECTION_7_TEXT_1' | translate }}</p>
+<p>{{ 'PRIVACY.SECTION_7_TEXT_2' | translate }}</p>
+<ul>
+  <li><code>{{ 'PRIVACY.SECTION_7_LINKEDIN' | translate }}</code></li>
+  <li><code>{{ 'PRIVACY.SECTION_7_GITHUB' | translate }}</code></li>
 </ul>
 <p>
-  Diese Daten dienen ausschließlich der technischen Sicherheit. Eine Zusammenführung mit anderen Datenquellen erfolgt nicht.
+{{"PRIVACY.SECTION_7_TEXT_3"| translate}}
 </p>
 
-<h2>4. Kontaktformular</h2>
-<p>
-  Wenn Sie das Kontaktformular nutzen, werden die eingegebenen Daten (z.B. Name, E-Mail-Adresse, Nachricht) per E-Mail an mich übermittelt.
-</p>
-<p>
-  Die Verarbeitung erfolgt ausschließlich zur Bearbeitung Ihrer Anfrage. Es erfolgt keine Weitergabe an Dritte. Das Formular nutzt ein eigenes PHP-Skript ohne externe Dienste.
-</p>
-
-<h2>5. Verwendung von Google Fonts</h2>
-<p>
-  Zur Darstellung einheitlicher Schriftarten verwendet diese Webseite Google Fonts, die lokal eingebunden sind.
-</p>
-<p>
-  Es erfolgt kein externer Zugriff auf Google-Server. Beim Laden der Seite werden keine personenbezogenen Daten an Google übertragen.
-</p>
-
-<h2>6. Bilder und Medien</h2>
-<p>
-  Alle auf dieser Webseite verwendeten Bilder stammen von Max Mustermann persönlich. Es werden keine externen oder lizenzpflichtigen Bildquellen verwendet.
-</p>
-
-<h2>7. Externe Links (LinkedIn, GitHub)</h2>
-<p>
-  Diese Webseite enthält Links zu externen Profilen von Max Mustermann bei <strong>LinkedIn</strong> und <strong>GitHub</strong>.
-</p>
-<p>
-  Beim Klicken auf einen dieser Links verlassen Sie diese Webseite. Es gelten dann die Datenschutzrichtlinien der jeweiligen Plattform:
-</p>
+<h2>{{ 'PRIVACY.SECTION_8_TITLE' | translate }}</h2>
+<p>{{ 'PRIVACY.SECTION_8_TEXT_1' | translate }}</p>
 <ul>
-  <li><a href="https://www.linkedin.com/legal/privacy-policy" target="_blank">Datenschutz bei LinkedIn</a></li>
-  <li><a href="https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement" target="_blank">Datenschutz bei GitHub</a></li>
+  <li>{{ 'PRIVACY.SECTION_8_LI_1' | translate }}</li>
+  <li>{{ 'PRIVACY.SECTION_8_LI_2' | translate }}</li>
+  <li>{{ 'PRIVACY.SECTION_8_LI_3' | translate }}</li>
 </ul>
-<p>
-  Beim bloßen Besuch dieser Webseite findet <strong>keine automatische Datenübertragung an diese Dienste</strong> statt.
-</p>
+<p>{{ 'PRIVACY.SECTION_8_TEXT_2' | translate }}</p>
 
-<h2>8. Ihre Rechte</h2>
-<p>
-  Sie haben das Recht auf:
-</p>
-<ul>
-  <li>Auskunft über Ihre gespeicherten personenbezogenen Daten</li>
-  <li>Berichtigung unrichtiger Daten</li>
-  <li>Löschung Ihrer Daten (sofern keine gesetzlichen Aufbewahrungspflichten bestehen)</li>
-</ul>
-<p>
-  Für Anfragen genügt eine formlose E-Mail an: <a href="mailto:max@mustermann.de">max.de</a>
-</p>
+<h2>{{ 'PRIVACY.SECTION_9_TITLE' | translate }}</h2>
+<p>{{ 'PRIVACY.SECTION_9_TEXT' | translate }}</p>
 
-<h2>9. Hosting</h2>
-<p>
-  Diese Webseite wird gehostet bei:<br />
-  IONOS SE<br />
-  Elgendorfer Str. 57<br />
-  56410 Montabaur<br />
-  <a href="https://www.ionos.de/terms-gtc/datenschutzerklaerung" target="_blank">
-    Datenschutz bei IONOS
-  </a>
-</p>
-
-<h2>10. Änderungen dieser Datenschutzerklärung</h2>
-<p>
-  Ich behalte mir vor, diese Datenschutzerklärung bei Bedarf anzupassen. Es gilt die jeweils aktuelle Version zum Zeitpunkt des Besuchs.
-</p>
-
-
+<h2>{{ 'PRIVACY.SECTION_10_TITLE' | translate }}</h2>
+<p>{{ 'PRIVACY.SECTION_10_TEXT' | translate }}</p>
   </div>
 
   <div class="footer-legally">
     <div class="copyright">
       <p>&#169; Richard Geis 2025</p>
       <div class="legally">
-      <p class="links" (click)="navigateToLegalNotice()" routerLink="/legal-notice">Impressum</p>
-      <p class="links active-link" (click)="navigateToPrivacyPolicy()" routerLink="/privacy-policy">Datenschutz</p>
+        <p
+          class="links"
+          (click)="navigateToLegalNotice()"
+          routerLink="/legal-notice"
+        >
+          {{ "FOOTER.LEGAL_NOTICE" | translate }}
+        </p>
+        <p class="links active-link" routerLink="/privacy-policy">
+          {{ "FOOTER.PRIVACY_POLICY" | translate }}
+        </p>
       </div>
     </div>
   </div>
 </div>
-
-

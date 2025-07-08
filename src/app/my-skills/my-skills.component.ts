@@ -1,9 +1,10 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-my-skills',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './my-skills.component.html',
   styleUrls: ['./my-skills.component.scss'],
 })

@@ -1,0 +1,102 @@
+{
+  "NAV": {
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
+  "WHY_ME": {
+    "TEXT": "Hi, I'm a web developer passionate about modern, high-performance solutions. I'm looking for new projects where I can contribute my experience and help turn your digital ideas into reality. Planning something new? Drop me a message, I'm excited to hear from you!"
+  },
+  "SKILLS": {
+    "STATEMENT": "Im always excited to learn new technologies, just tell me what you need."
+  },
+  "PROJECTS": {
+    "CARD_1": "Task manager inspired by the Kanban system. Create and organize tasks via drag-and-drop and assign them to users and categories.",
+    "CARD_2": "A jumping, running, and throwing game based on object-oriented principles. Help Pepe collect coins and Tabasco salsa to battle the crazy chicken.",
+    "CARD_3": "Together with my team, Im developing a business-focused chat client in this project. A platform similar to Discord, WhatsApp, or Slack, but tailored to professional needs."
+  },
+  "TESTIMONIALS": {
+    "QUOTE_1": "Richard not only brings technical expertise but also listens well and contributes constructive ideas to the team. Sometimes he was a bit too detail-focused, but that often led to high-quality results.",
+    "QUOTE_2": "Technically excellent, but what I really appreciated about working with him was his openness to feedback.",
+    "QUOTE_3": "Richard is someone you can rely on. Even under pressure, he stays calm, solution-oriented, and supports the team effectively.",
+    "TITLE_DE": "Here's what my colleagues say about me",
+    "PROJECT_JOIN": "Project Join",
+    "PROJECT_KOCHWELT": "Project CookWorld"
+  },
+  "CONTACT": {
+    "INTRO": "I don't just develop code, I develop solutions. If you're looking for a reliable partner who thinks along, learns with you, and helps shape the outcome, send me a message. I'm open to new ideas and challenges.",
+    "PRIVACY_TEXT_START": "I have read the",
+    "PRIVACY_LINK": "privacy policy",
+    "PRIVACY_TEXT_END": "and agree to the processing of my data as described therein.",
+    "SEND_BUTTON": "Send",
+    "PLACEHOLDER_MESSAGE": "Your message",
+    "PLACEHOLDER_EMAIL": "Your email",
+    "PLACEHOLDER_NAME": "Your name"
+  },
+  "FOOTER": {
+    "PRIVACY_POLICY": "Privacy policy",
+    "LEGAL_NOTICE": "Legal notice"
+  },
+  "IMPRINT": {
+    "TITLE": "Legal Notice",
+    "LEGAL_INFO": "Information in accordance with § 5 TMG:",
+    "ADDRESS": "Max Mustermann\nMusterstraße 12\n12345 Musterstadt\nGermany",
+    "CONTACT": "Contact:",
+    "PHONE": "Phone: 0123 456789",
+    "EMAIL": "E-Mail: maxmustermann.de",
+    "RESPONSIBLE": "Responsible for content in accordance with § 55 para. 2 RStV:",
+    "NOTE": "Note:",
+    "DISCLAIMER": "This website is a private landing page and is intended solely for the personal promotion of Max Mustermann. It is not used for commercial purposes."
+  },
+  "PRIVACY": {
+    "TITLE": "Privacy Policy",
+
+    "SECTION_1_TITLE": "1. General Information",
+    "SECTION_1_TEXT_1": "This privacy policy informs you about the type, scope, and purpose of the processing of personal data on this website.",
+    "SECTION_1_TEXT_2": "This website is used solely for the personal self-promotion of Max Mustermann and is privately operated. There is no commercial use.",
+
+    "SECTION_2_TITLE": "2. Responsible Entity",
+    "SECTION_2_TEXT": "Max Mustermann\nMusterstraße 12\n12345 Musterstadt\nEmail: maxmustermann.de",
+
+    "SECTION_3_TITLE": "3. Access Data / Server Log Files",
+    "SECTION_3_TEXT_1": "When visiting this website, information is automatically collected and stored in server log files by the hosting provider IONOS:",
+    "SECTION_3_LI_1": "Visited page",
+    "SECTION_3_LI_2": "Date and time of access",
+    "SECTION_3_LI_3": "Amount of data transferred",
+    "SECTION_3_LI_4": "Browser type and version",
+    "SECTION_3_LI_5": "Operating system used",
+    "SECTION_3_LI_6": "Referrer URL",
+    "SECTION_3_LI_7": "IP address (anonymized)",
+    "SECTION_3_TEXT_2": "This data is used exclusively for technical security. It is not combined with other data sources.",
+
+    "SECTION_4_TITLE": "4. Contact Form",
+    "SECTION_4_TEXT_1": "If you use the contact form, the entered data (e.g., name, email address, message) will be sent to me via email.",
+    "SECTION_4_TEXT_2": "Processing is carried out solely for the purpose of handling your request. No data is shared with third parties. The form uses a custom PHP script without external services.",
+
+    "SECTION_5_TITLE": "5. Use of Google Fonts",
+    "SECTION_5_TEXT_1": "To ensure consistent fonts, this website uses Google Fonts, which are embedded locally.",
+    "SECTION_5_TEXT_2": "There is no external request to Google servers. No personal data is transferred to Google when loading the page.",
+
+    "SECTION_6_TITLE": "6. Images and Media",
+    "SECTION_6_TEXT": "All images used on this website are the personal property of Max Mustermann. No external or licensed image sources are used.",
+
+    "SECTION_7_TITLE": "7. External Links (LinkedIn, GitHub)",
+    "SECTION_7_TEXT_1": "This website contains links to external profiles of Max Mustermann on LinkedIn and GitHub.",
+    "SECTION_7_TEXT_2": "By clicking one of these links, you leave this website. The privacy policies of the respective platforms apply:",
+    "SECTION_7_LINKEDIN": "LinkedIn: https://www.linkedin.com/legal/privacy-policy",
+    "SECTION_7_GITHUB": "GitHub: https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement",
+    "SECTION_7_TEXT_3": "Simply visiting this website does not result in automatic data transmission to those services.",
+
+    "SECTION_8_TITLE": "8. Your Rights",
+    "SECTION_8_TEXT_1": "You have the right to:",
+    "SECTION_8_LI_1": "Access information about your stored personal data",
+    "SECTION_8_LI_2": "Correct inaccurate data",
+    "SECTION_8_LI_3": "Delete your data (as long as there are no legal retention requirements)",
+    "SECTION_8_TEXT_2": "To make a request, simply send an email to: max.de",
+
+    "SECTION_9_TITLE": "9. Hosting",
+    "SECTION_9_TEXT": "This website is hosted by:\nIONOS SE\nElgendorfer Str. 57\n56410 Montabaur\nhttps://www.ionos.de/terms-gtc/datenschutzerklaerung",
+
+    "SECTION_10_TITLE": "10. Changes to This Privacy Policy",
+    "SECTION_10_TEXT": "I reserve the right to modify this privacy policy if necessary. The version in effect at the time of your visit applies."
+  }
+}

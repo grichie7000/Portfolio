@@ -14,15 +14,33 @@
         <ul>
           <li><a href="#why-me" class="nav-link">Why me</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projekte</a></li>
-          <li><a href="#contact" class="nav-link">Kontakt</a></li>
+          <li>
+            <a href="#projects" class="nav-link">
+              {{ "NAV.PROJECTS" | translate }}</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link">{{
+              "NAV.CONTACT" | translate
+            }}</a>
+          </li>
         </ul>
       </nav>
 
       <div class="language-switch">
-        <p class="activ-language">DE</p>
+        <p
+          (click)="switchLang('de')"
+          [class.activ-language]="currentLang === 'de'"
+        >
+          DE
+        </p>
         <span>|</span>
-        <p>EN</p>
+        <p
+          (click)="switchLang('en')"
+          [class.activ-language]="currentLang === 'en'"
+        >
+          EN
+        </p>
       </div>
     </div>
   </div>
