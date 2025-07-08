@@ -6,8 +6,8 @@
   <div class="copyright">
     <p>&#169; Richard Geis 2025</p>
     <div class="legally">
-      <a routerLink="/legal-notice">Impressum</a>
-      <a href="">Datenschutz</a>
+      <p class="links" (click)="navigateToLegalNotice()" routerLink="/legal-notice">Impressum</p>
+      <p class="links" (click)="navigateToPrivacyPolicy()" routerLink="/privacy-policy">Datenschutz</p>
     </div>
   </div>
   <div class="rg-logo-mobile">
