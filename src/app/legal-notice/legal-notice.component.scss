@@ -110,3 +110,44 @@
     color: $secondary-color;
   }
 }
+
+@media (max-width: 1440px) and (min-width: 320px) {
+  .legal-notice {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .back-arrow {
+    position: absolute;
+    right: 60px;
+  }
+}
+
+@media (max-width: 460px) and (min-width: 320px) {
+  .legal-notice {
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 16px;
+    font-family: "RobotoMono-slim";
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+  }
+  .back-arrow {
+    display: none;
+  }
+
+  .links {
+    margin: 0 12px !important;
+  }
+
+  .logo {
+    img {
+      height: 62px;
+      width: 62px;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 <div class="legal-notice">
   <div class="header-legally">
     <div class="logo">
-      <img src="/assets/img/logo-orange.png" alt="logo" />
+      <img (click)="navigateToMainpage()" src="/assets/img/logo-orange.png" alt="logo" />
     </div>
     <div class="language-switch">
       <p class="activ-language">DE</p>
@@ -12,7 +12,7 @@
 
   <div class="legal-notice-text">
     <div class="back-arrow">
-      <img src="/assets/img/hero/arrow-down.png" alt="back to mainpage" />
+      <img (click)="navigateToMainpage()" src="/assets/img/hero/arrow-down.png" alt="back to mainpage" />
     </div>
     <h1>Impressum</h1>
 
@@ -55,8 +55,8 @@
     <div class="copyright">
       <p>&#169; Richard Geis 2025</p>
       <div class="legally">
-        <p class="links active-link" routerLink="/legal-notice">Impressum</p>
-        <p class="links" routerLink="/privacy-policy">Datenschutz</p>
+      <p class="links active-link" (click)="navigateToLegalNotice()" routerLink="/legal-notice">Impressum</p>
+      <p class="links" (click)="navigateToPrivacyPolicy()" routerLink="/privacy-policy">Datenschutz</p>
       </div>
     </div>
   </div>

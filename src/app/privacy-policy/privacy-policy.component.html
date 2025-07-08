@@ -1,3 +1,21 @@
+
+
+<div class="privacy-policy">
+  <div class="header-legally">
+    <div class="logo">
+      <img (click)="navigateToMainpage()" src="/assets/img/logo-orange.png" alt="logo" />
+    </div>
+    <div class="language-switch">
+      <p class="activ-language">DE</p>
+      <span>|</span>
+      <p>EN</p>
+    </div>
+  </div>
+
+  <div class="privacy-policy-text">
+    <div class="back-arrow">
+      <img (click)="navigateToMainpage()" src="/assets/img/hero/arrow-down.png" alt="back to mainpage" />
+    </div>
 <h1>Datenschutzerklärung</h1>
 
 <h2>1. Allgemeine Hinweise</h2>
@@ -97,4 +115,19 @@
 <p>
   Ich behalte mir vor, diese Datenschutzerklärung bei Bedarf anzupassen. Es gilt die jeweils aktuelle Version zum Zeitpunkt des Besuchs.
 </p>
+
+
+  </div>
+
+  <div class="footer-legally">
+    <div class="copyright">
+      <p>&#169; Richard Geis 2025</p>
+      <div class="legally">
+      <p class="links" (click)="navigateToLegalNotice()" routerLink="/legal-notice">Impressum</p>
+      <p class="links active-link" (click)="navigateToPrivacyPolicy()" routerLink="/privacy-policy">Datenschutz</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
