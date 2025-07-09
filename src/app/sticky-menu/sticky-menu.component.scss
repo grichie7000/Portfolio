@@ -36,6 +36,7 @@
 
       li {
         a {
+          font-weight: bold;
           text-decoration: none;
           color: $primary-color;
           transition: color 0.5s ease;
@@ -50,6 +51,7 @@
 
   .language-switch {
     color: $primary-color;
+    font-weight: bold;
     @include flexbox($gap: 4px);
     p {
       &:hover {

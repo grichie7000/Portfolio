@@ -27,10 +27,10 @@ export class ContactMeComponent {
     this.router.navigateByUrl('/privacy-policy');
   }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://richard-geis.com.de/sendMail.php',
+    endPoint: 'https://richard-geis.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

@@ -11,7 +11,7 @@
       <div>
         <div class="contact-icon" id="mail-to">
           <img src="assets/img/contact-me/email-icon.png" alt="" />
-          <a href="mailto:info@richard-geis.com">info&#64;richard-geis.de</a>
+          <a href="mailto:info@richard-geis.com">contact&#64;richard-geis.com</a>
         </div>
         <div class="contact-icon" id="call-to">
           <img src="assets\img\contact-me\phone-icon.png" alt="" />
@@ -41,7 +41,7 @@
             required
           />
           @if (!name.valid && name.touched) {
-          <span class="error-message">Please enter your name</span>
+          <span class="error-message">{{ "ERROR.NAME" | translate }}</span>
           }
         </div>
 
@@ -58,7 +58,7 @@
             required
           />
           @if (!email.valid && email.touched) {
-          <span class="error-message">Please enter your Email</span>
+          <span class="error-message">{{ "ERROR.EMAIL" | translate }}</span>
           }
         </div>
       </div>
@@ -75,7 +75,7 @@
           required
         ></textarea>
         @if (!message.valid && message.touched) {
-        <span class="error-message">Please enter a message</span>
+        <span class="error-message">{{ "ERROR.MESSAGE" | translate }}</span>
         }
       </div>
     </div>
@@ -115,11 +115,11 @@
     <div>
       <div class="contact-icon" id="mail-to">
         <img src="assets/img/contact-me/email-icon.png" alt="" />
-        <a href="mailto:contact@richard-geis.com">info&#64;richard-geis.de</a>
+        <a href="mailto:contact@richard-geis.com">contact&#64;richard-geis.com</a>
       </div>
       <div class="contact-icon" id="call-to">
         <img src="assets\img\contact-me\phone-icon.png" alt="" />
-        <a href="tel:+4917666705220">+49 17666705220</a>
+        <a href="tel:+4917666705220">+49 1766705220</a>
       </div>
     </div>
   </div>

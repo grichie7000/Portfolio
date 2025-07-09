@@ -40,23 +40,23 @@
   "IMPRINT": {
     "TITLE": "Impressum",
     "LEGAL_INFO": "Angaben gemäß § 5 TMG:",
-    "ADDRESS": "Max Mustermann\nMusterstraße 12\n12345 Musterstadt\nDeutschland",
+    "ADDRESS": "Richard Geis,\nSandweg 15,\n91735 Muhr am See,\nDeutschland",
     "CONTACT": "Kontakt:",
-    "PHONE": "Telefon: 0123 456789",
-    "EMAIL": "E-Mail: maxmustermann.de",
+    "PHONE": "Telefon: +49 176 66705220",
+    "EMAIL": "E-Mail: contact@richard-geis.com",
     "RESPONSIBLE": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
     "NOTE": "Hinweis:",
-    "DISCLAIMER": "Diese Webseite ist eine private Landingpage und dient ausschließlich der persönlichen Bewerbung von Max Mustermann. Es erfolgt keine kommerzielle Nutzung."
+    "DISCLAIMER": "Diese Webseite ist eine private Landingpage und dient ausschließlich der persönlichen Bewerbung von Richard Geis. Es erfolgt keine kommerzielle Nutzung."
   },
     "PRIVACY": {
     "TITLE": "Datenschutzerklärung",
 
     "SECTION_1_TITLE": "1. Allgemeine Hinweise",
     "SECTION_1_TEXT_1": "Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und Zweck der Verarbeitung personenbezogener Daten auf dieser Webseite.",
-    "SECTION_1_TEXT_2": "Diese Webseite dient ausschließlich der persönlichen Bewerbung von Max Mustermann und wird privat betrieben. Es findet keine kommerzielle Nutzung statt.",
+    "SECTION_1_TEXT_2": "Diese Webseite dient ausschließlich der persönlichen Bewerbung von Richard Geis und wird privat betrieben. Es findet keine kommerzielle Nutzung statt.",
 
     "SECTION_2_TITLE": "2. Verantwortliche Stelle",
-    "SECTION_2_TEXT": "Max Mustermann\nMusterstraße 12\n12345 Musterstadt\nE-Mail: maxmustermann.de",
+    "SECTION_2_TEXT": "Richard Geis,\nSandweg 15,\n91735 Muhr am See,\nDeutschland,\nE-Mail: contact@richard-geis.com",
 
     "SECTION_3_TITLE": "3. Zugriffsdaten / Server-Logfiles",
     "SECTION_3_TEXT_1": "Beim Besuch dieser Webseite werden durch den Hostinganbieter IONOS automatisch Informationen erfasst und in sogenannten Server-Logfiles gespeichert:",
@@ -78,10 +78,10 @@
     "SECTION_5_TEXT_2": "Es erfolgt kein externer Zugriff auf Google-Server. Beim Laden der Seite werden keine personenbezogenen Daten an Google übertragen.",
 
     "SECTION_6_TITLE": "6. Bilder und Medien",
-    "SECTION_6_TEXT": "Alle auf dieser Webseite verwendeten Bilder stammen von Max Mustermann persönlich. Es werden keine externen oder lizenzpflichtigen Bildquellen verwendet.",
+    "SECTION_6_TEXT": "Es werden keine lizenzpflichtigen Bildquellen verwendet.",
 
     "SECTION_7_TITLE": "7. Externe Links (LinkedIn, GitHub)",
-    "SECTION_7_TEXT_1": "Diese Webseite enthält Links zu externen Profilen von Max Mustermann bei LinkedIn und GitHub.",
+    "SECTION_7_TEXT_1": "Diese Webseite enthält Links zu externen Profilen von Richard Geis bei LinkedIn und GitHub.",
     "SECTION_7_TEXT_2": "Beim Klicken auf einen dieser Links verlassen Sie diese Webseite. Es gelten dann die Datenschutzrichtlinien der jeweiligen Plattform:",
     "SECTION_7_LINKEDIN": "LinkedIn: https://www.linkedin.com/legal/privacy-policy",
     "SECTION_7_GITHUB": "GitHub: https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement",
@@ -92,12 +92,17 @@
     "SECTION_8_LI_1": "Auskunft über Ihre gespeicherten personenbezogenen Daten",
     "SECTION_8_LI_2": "Berichtigung unrichtiger Daten",
     "SECTION_8_LI_3": "Löschung Ihrer Daten (sofern keine gesetzlichen Aufbewahrungspflichten bestehen)",
-    "SECTION_8_TEXT_2": "Für Anfragen genügt eine formlose E-Mail an: max.de",
+    "SECTION_8_TEXT_2": "Für Anfragen genügt eine formlose E-Mail an: contact@richard-geis.com",
 
     "SECTION_9_TITLE": "9. Hosting",
     "SECTION_9_TEXT": "Diese Webseite wird gehostet bei:\nIONOS SE\nElgendorfer Str. 57\n56410 Montabaur\nhttps://www.ionos.de/terms-gtc/datenschutzerklaerung",
 
     "SECTION_10_TITLE": "10. Änderungen dieser Datenschutzerklärung",
     "SECTION_10_TEXT": "Ich behalte mir vor, diese Datenschutzerklärung bei Bedarf anzupassen. Es gilt die jeweils aktuelle Version zum Zeitpunkt des Besuchs."
+  },
+  "ERROR":{
+    "NAME":"Bitte gib einen Name ein",
+    "EMAIL":"Bitte gib deine Email ein",
+    "MESSAGE":"Bitte schreib eine Nachricht"
   }
 }

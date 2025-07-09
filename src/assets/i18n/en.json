@@ -39,23 +39,23 @@
   "IMPRINT": {
     "TITLE": "Legal Notice",
     "LEGAL_INFO": "Information in accordance with § 5 TMG:",
-    "ADDRESS": "Max Mustermann\nMusterstraße 12\n12345 Musterstadt\nGermany",
+    "ADDRESS": "Richard Geis,\nSandweg 15,\n91735 Muhr am See,\nGermany",
     "CONTACT": "Contact:",
-    "PHONE": "Phone: 0123 456789",
-    "EMAIL": "E-Mail: maxmustermann.de",
+    "PHONE": "Phone: +49 176 66705220",
+    "EMAIL": "E-Mail: contact@richard-geis.com",
     "RESPONSIBLE": "Responsible for content in accordance with § 55 para. 2 RStV:",
     "NOTE": "Note:",
-    "DISCLAIMER": "This website is a private landing page and is intended solely for the personal promotion of Max Mustermann. It is not used for commercial purposes."
+    "DISCLAIMER": "This website is a private landing page and is intended solely for the personal promotion of Richard Geis. It is not used for commercial purposes."
   },
   "PRIVACY": {
     "TITLE": "Privacy Policy",
 
     "SECTION_1_TITLE": "1. General Information",
     "SECTION_1_TEXT_1": "This privacy policy informs you about the type, scope, and purpose of the processing of personal data on this website.",
-    "SECTION_1_TEXT_2": "This website is used solely for the personal self-promotion of Max Mustermann and is privately operated. There is no commercial use.",
+    "SECTION_1_TEXT_2": "This website is used solely for the personal self-promotion of Richard Geis and is privately operated. There is no commercial use.",
 
     "SECTION_2_TITLE": "2. Responsible Entity",
-    "SECTION_2_TEXT": "Max Mustermann\nMusterstraße 12\n12345 Musterstadt\nEmail: maxmustermann.de",
+    "SECTION_2_TEXT": "Richard Geis,\nSandweg 15,\n91735 Muhr am See,\nDeutschland,\nE-Mail: contact@richard-geis.com",
 
     "SECTION_3_TITLE": "3. Access Data / Server Log Files",
     "SECTION_3_TEXT_1": "When visiting this website, information is automatically collected and stored in server log files by the hosting provider IONOS:",
@@ -77,10 +77,10 @@
     "SECTION_5_TEXT_2": "There is no external request to Google servers. No personal data is transferred to Google when loading the page.",
 
     "SECTION_6_TITLE": "6. Images and Media",
-    "SECTION_6_TEXT": "All images used on this website are the personal property of Max Mustermann. No external or licensed image sources are used.",
+    "SECTION_6_TEXT": "No licensed image sources are used on this website.",
 
     "SECTION_7_TITLE": "7. External Links (LinkedIn, GitHub)",
-    "SECTION_7_TEXT_1": "This website contains links to external profiles of Max Mustermann on LinkedIn and GitHub.",
+    "SECTION_7_TEXT_1": "This website contains links to external profiles of Richard Geis on LinkedIn and GitHub.",
     "SECTION_7_TEXT_2": "By clicking one of these links, you leave this website. The privacy policies of the respective platforms apply:",
     "SECTION_7_LINKEDIN": "LinkedIn: https://www.linkedin.com/legal/privacy-policy",
     "SECTION_7_GITHUB": "GitHub: https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement",
@@ -91,12 +91,17 @@
     "SECTION_8_LI_1": "Access information about your stored personal data",
     "SECTION_8_LI_2": "Correct inaccurate data",
     "SECTION_8_LI_3": "Delete your data (as long as there are no legal retention requirements)",
-    "SECTION_8_TEXT_2": "To make a request, simply send an email to: max.de",
+    "SECTION_8_TEXT_2": "To make a request, simply send an email to: contact@richard-geis.com",
 
     "SECTION_9_TITLE": "9. Hosting",
     "SECTION_9_TEXT": "This website is hosted by:\nIONOS SE\nElgendorfer Str. 57\n56410 Montabaur\nhttps://www.ionos.de/terms-gtc/datenschutzerklaerung",
 
     "SECTION_10_TITLE": "10. Changes to This Privacy Policy",
     "SECTION_10_TEXT": "I reserve the right to modify this privacy policy if necessary. The version in effect at the time of your visit applies."
+  },
+  "ERROR":{
+    "NAME":"Please enter your name",
+    "EMAIL":"Please enter your Email",
+    "MESSAGE":"Please enter a message"
   }
 }
