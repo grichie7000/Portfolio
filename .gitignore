@@ -43,3 +43,4 @@ Thumbs.db
 
 #assets
 /src/assets/img
+/src/app/sendMail.php

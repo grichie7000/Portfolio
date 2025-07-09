@@ -29,14 +29,14 @@ switch ($_SERVER['REQUEST_METHOD']) {
             exit;
         }
 
-        $recipient = 'contact@test.com';
+        $recipient = 'contact@richard-geis.com';
         $subject = "Contact From <$email>";
         $message = "From: $name<br><br>" . nl2br(htmlspecialchars($messageContent));
 
         $headers = [
             'MIME-Version: 1.0',
             'Content-type: text/html; charset=utf-8',
-            'From: contact@test.com'
+            'From: contact@richard-geis.com'
         ];
 
         if (mail($recipient, $subject, $message, implode("\r\n", $headers))) {
