@@ -107,7 +107,6 @@ form {
     letter-spacing: 1px;
     background-color: transparent;
     padding: 12px 8px;
-    margin-bottom: 32px;
     width: 100%;
     border: 1px solid $secondary-color;
     color: $secondary-color;
@@ -125,6 +124,18 @@ form {
     border: 1px solid $secondary-color;
     color: $secondary-color;
   }
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid $secondary-color;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+.line-break {
+  display: inline;
 }
 
 .check-and-submit {
@@ -147,74 +158,71 @@ form {
   }
 }
 
+.active-button {
+  color: $primary-color !important;
+  border-color: $secondary-color !important;
+  &:hover {
+    color: $secondary-color !important;
+  }
+}
+
 .custom-checkbox {
   font-family: "RobotoMono-slim";
-  display: inline-flex;
+  display: flex;
   align-items: center;
   cursor: pointer;
   user-select: none;
   font-size: 14px;
-  a {
-    padding-left: 6px;
-    padding-right: 6px;
-    text-decoration: none;
+  &:hover .checkmark {
+    background-color: $primary-color;
   }
 }
 
-.custom-checkbox input[type="checkbox"] {
+input[type="checkbox"] {
   display: none;
 }
 
-.custom-checkbox .checkmark {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border: 2px solid $primary-color;
+.checkmark {
+  height: 16px;
+  width: 16px;
+  border: 2px solid $secondary-color;
   background-color: transparent;
   margin-right: 8px;
-  box-sizing: border-box;
   position: relative;
 }
 
-.custom-checkbox input[type="checkbox"]:checked + .checkmark {
-  background-color: $primary-color;
-  border: 2px solid $secondary-color;
-}
-.custom-checkbox .checkmark::after {
+input[type="checkbox"]:checked + .checkmark::after {
   content: "";
   position: absolute;
   left: 4px;
   top: 0px;
-  width: 5px;
-  height: 10px;
+  width: 3px;
+  height: 8px;
   border: solid $secondary-color;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
-  display: none;
 }
 
-.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
-  display: block;
+input[type="checkbox"]:checked + .checkmark {
+  background-color: $primary-color;
 }
 
-.custom-checkbox:hover .checkmark {
-  background-color: $secondary-color;
+.privacy-text {
+  margin-left: 16px;
+  font-size: 16px;
+  a:hover {
+    font-weight: bold;
+  }
 }
 
-label a:hover {
-  font-weight: bold;
+.error-message {
+  color: rgb(221, 14, 48);
+  font-family: 'RobotoMono-slim';
+  font-size: 16px;
 }
 
-input[type="email"]:focus,
-input[type="text"]:focus,
-textarea:focus {
-  outline: none;
-  border: 1px solid $secondary-color;
-  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
-}
-
-.line-break {
-  display: inline;
+.input-height{
+  height: 74px;
 }
 
 @media (max-width: 1800px) and (min-width: 1440px) {
@@ -271,7 +279,8 @@ textarea:focus {
   }
 
   .input-right {
-    flex: 1;
+    flex: unset;
+    height: 146px;
   }
 
   .check-and-submit {
@@ -284,40 +293,39 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    img{
+    img {
       height: 32px;
     }
   }
 
-  .arrow-pos{
+  .arrow-pos {
     width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
   }
 
-  .contact-icon{
+  .contact-icon {
     flex-direction: column;
   }
 }
 
-
-@media (max-width: 840px){
-  .checkmark{
+@media (max-width: 840px) {
+  .checkmark {
     min-width: 18px;
   }
-  .custom-checkbox{
+  .custom-checkbox {
     flex-direction: column;
   }
 
-  .mobile-text{
+  .mobile-text {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
 
-@media (max-width: 460px){
+@media (max-width: 460px) {
   .contact-me-section {
     padding-left: 18px;
     padding-right: 18px;
@@ -325,23 +333,29 @@ textarea:focus {
       font-size: 32px !important;
     }
 
-    button{
+    button {
       font-size: 16px;
     }
   }
 
-  .contact-text{
+  .contact-text {
     text-align: center;
   }
 
-    .contact-mobile {
-      font-size: 16px;
-    img{
+  .contact-mobile {
+    font-size: 16px;
+    img {
       height: 24px;
     }
   }
 
-  #arrow-start{
+  #arrow-start {
     height: 62px;
+  }
+}
+
+@media (max-width: 850px) {
+  .custom-checkbox {
+    flex-direction: row;
   }
 }

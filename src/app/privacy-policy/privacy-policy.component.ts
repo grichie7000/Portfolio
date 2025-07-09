@@ -16,7 +16,7 @@ export class PrivacyPolicyComponent {
     this.currentLang = savedLang;
   }
 
-    switchLang(lang: string) {
+  switchLang(lang: string) {
     this.translate.use(lang);
     this.currentLang = lang;
     localStorage.setItem('lang', lang);

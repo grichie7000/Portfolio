@@ -1,35 +1,61 @@
-import { Component } from '@angular/core';
-import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { Router } from '@angular/router';
+import { FormsModule, NgForm } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact-me',
-  imports: [ReactiveFormsModule, TranslateModule],
+  imports: [TranslateModule, FormsModule],
   templateUrl: './contact-me.component.html',
-  styleUrl: './contact-me.component.scss'
+  styleUrl: './contact-me.component.scss',
 })
 export class ContactMeComponent {
-  contactForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private router: Router) {
-    this.contactForm = this.fb.group({
-      name: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required],
-      privacy: [false, Validators.requiredTrue]
-    });
+  http = inject(HttpClient);
+
+  contactData = {
+    name:"",
+    email:"",
+    message:"",
+    privacy: false,
   }
 
-    navigateToPrivacyPolicy(){
-    this.router.navigateByUrl("/privacy-policy")
+  constructor(private router: Router) {}
+
+  navigateToPrivacyPolicy() {
+    this.router.navigateByUrl('/privacy-policy');
   }
 
-  onSubmit() {
-    if (this.contactForm.valid) {
-      console.log(this.contactForm.value);
-    } else {
-      console.log('Formular ist ungültig');
+  mailTest = true;
+
+  post = {
+    endPoint: 'https://richard-geis.com.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+
+            ngForm.resetForm();
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+
+      ngForm.resetForm();
     }
   }
 }

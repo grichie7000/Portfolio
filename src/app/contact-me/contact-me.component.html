@@ -1,7 +1,7 @@
 <div class="contact-me-section" data-aos="fade-up" data-aos-duration="800">
   <div class="headline-contat-me">
     <h3>Contact me</h3>
-    <img src="/assets/img/contact-me/contact-text.png" alt="" />
+    <img src="assets/img/contact-me/contact-text.png" alt="" />
   </div>
   <div class="contact-and-text">
     <div class="contact-text">
@@ -10,11 +10,11 @@
     <div class="contact">
       <div>
         <div class="contact-icon" id="mail-to">
-          <img src="/assets/img/contact-me/email-icon.png" alt="" />
+          <img src="assets/img/contact-me/email-icon.png" alt="" />
           <a href="mailto:info@richard-geis.com">info&#64;richard-geis.de</a>
         </div>
         <div class="contact-icon" id="call-to">
-          <img src="\assets\img\contact-me\phone-icon.png" alt="" />
+          <img src="assets\img\contact-me\phone-icon.png" alt="" />
           <a href="tel:+4917666705220">+49 17666705220</a>
         </div>
       </div>
@@ -26,52 +26,81 @@
       /></a>
     </div>
   </div>
-  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
     <div class="input-section">
       <div class="input-left">
-        <div>
+        <div class="input-height">
           <input
+            #name="ngModel"
+            id="name"
+            name="name"
             type="text"
+            minlength="4"
+            [(ngModel)]="contactData.name"
             [placeholder]="'CONTACT.PLACEHOLDER_NAME' | translate"
-            formControlName="name"
             required
           />
+          @if (!name.valid && name.touched) {
+          <span class="error-message">Please enter your name</span>
+          }
         </div>
 
-        <div>
+        <div class="input-height">
           <input
+            #email="ngModel"
+            id="email"
+            name="email"
             type="email"
+            minlength="4"
+            [(ngModel)]="contactData.email"
             [placeholder]="'CONTACT.PLACEHOLDER_EMAIL' | translate"
-            formControlName="email"
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
             required
           />
+          @if (!email.valid && email.touched) {
+          <span class="error-message">Please enter your Email</span>
+          }
         </div>
       </div>
 
       <div class="input-right">
         <textarea
+          #message="ngModel"
+          id="message"
+          name="message"
           rows="6"
+          minlength="4"
+          [(ngModel)]="contactData.message"
           [placeholder]="'CONTACT.PLACEHOLDER_MESSAGE' | translate"
-          formControlName="message"
           required
         ></textarea>
+        @if (!message.valid && message.touched) {
+        <span class="error-message">Please enter a message</span>
+        }
       </div>
     </div>
     <div class="check-and-submit">
       <label class="custom-checkbox">
-        <input type="checkbox" formControlName="privacy" required />
-        <div class="mobile-text">
-          <span class="checkmark"></span>
-          <p class="privacy-text">
-            {{ "CONTACT.PRIVACY_TEXT_START" | translate }}
-            <a (click)="navigateToPrivacyPolicy()">{{
-              "CONTACT.PRIVACY_LINK" | translate
-            }}</a>
-            {{ "CONTACT.PRIVACY_TEXT_END" | translate }}
-          </p>
-        </div>
+        <input
+          #checkbox="ngModel"
+          id="legally-check"
+          type="checkbox"
+          name="checkbox"
+          [(ngModel)]="contactData.privacy"
+          required
+        />
+        <span class="checkmark"></span>
+        <p class="privacy-text">
+          {{ "CONTACT.PRIVACY_TEXT_START" | translate }}
+          <a (click)="navigateToPrivacyPolicy()">{{
+            "CONTACT.PRIVACY_LINK" | translate
+          }}</a>
+          {{ "CONTACT.PRIVACY_TEXT_END" | translate }}
+        </p>
       </label>
-      <button type="submit">{{ "CONTACT.SEND_BUTTON" | translate }}</button>
+      <button type="submit" [class.active-button]="contactForm.valid">
+        {{ "CONTACT.SEND_BUTTON" | translate }}
+      </button>
     </div>
   </form>
   <div class="contact-mobile">
@@ -85,11 +114,11 @@
     </div>
     <div>
       <div class="contact-icon" id="mail-to">
-        <img src="/assets/img/contact-me/email-icon.png" alt="" />
-        <a href="mailto:info@richard-geis.com">info&#64;richard-geis.de</a>
+        <img src="assets/img/contact-me/email-icon.png" alt="" />
+        <a href="mailto:contact@richard-geis.com">info&#64;richard-geis.de</a>
       </div>
       <div class="contact-icon" id="call-to">
-        <img src="\assets\img\contact-me\phone-icon.png" alt="" />
+        <img src="assets\img\contact-me\phone-icon.png" alt="" />
         <a href="tel:+4917666705220">+49 17666705220</a>
       </div>
     </div>
